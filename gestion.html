@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CreaPaq - Página de Inicio</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .hero-section { background-color: #eee; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .hero-image { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px; }
+        .controls { margin-top: 20px; }
+        label { display: block; margin-bottom: 10px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <h2>Sección del Slider Principal</h2>
+        <p>Esta es la imagen del slider. Puedes cambiarla usando el botón de abajo.</p>
+        <img id="heroImage" class="hero-image" src="https://via.placeholder.com/800x400.png?text=Imagen+por+Defecto" alt="Imagen del Slider">
+    </div>
+
+    <div class="controls">
+        <label for="imageUpload">Seleccionar una nueva imagen:</label>
+        <input type="file" id="imageUpload" accept="image/jpeg, image/png">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageUpload = document.getElementById('imageUpload');
+            const heroImage = document.getElementById('heroImage');
+
+            // 1. Cargar la imagen guardada de localStorage al inicio
+            const savedImage = localStorage.getItem('heroImage');
+            if (savedImage) {
+                heroImage.src = savedImage;
+            }
+
+            // 2. Escuchar cuando el usuario seleccione un archivo
+            imageUpload.addEventListener('change', (event) => {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+
+                    // Cuando el lector de archivos termine de leer...
+                    reader.onload = (e) => {
+                        const newImageSrc = e.target.result;
+                        
+                        // 3. Cambiar la imagen en la página
+                        heroImage.src = newImageSrc;
+                        
+                        // 4. Guardar la nueva imagen en localStorage para que persista
+                        localStorage.setItem('heroImage', newImageSrc);
+                    };
+
+                    // Leer el archivo como una cadena de datos (Base64)
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

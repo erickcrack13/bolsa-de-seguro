@@ -1,0 +1,14 @@
+{
+  "heroSlider1": "assets/images/hero-slider-1.jpg",
+  "heroSlider2": "assets/images/hero-slider-2.jpg",
+  "heroSlider3": "assets/images/hero-slider-3.jpg",
+  "tabImage1": "assets/images/country-01.jpg",
+  "tabImage2": "assets/images/country-02.jpg",
+  "tabImage3": "assets/images/country-03.jpg",
+  "deal1": "assets/images/deals-01.jpg",
+  "deal2": "assets/images/deals-02.jpg",
+  "deal3": "assets/images/deals-03.jpg",
+  "deal4": "assets/images/deals-04.jpg",
+  "deal5": "assets/images/deals-05.jpg",
+  "reservationImage": "assets/images/map-image.jpg"
+}

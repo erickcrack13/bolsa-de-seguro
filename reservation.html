@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <title>CreaPaq - Página de Cotización</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  </head>
+
+<body>
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="CreaPaq Logo">
+            </a>
+            <ul class="nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="about.html">Acerca de</a></li>
+              <li><a href="deals.html">Ofertas</a></li>
+              <li><a href="reservation.html" class="active">Cotización</a></li>
+              <li><a href="reservation.html">¡Cotiza Ya!</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menú</span>
+            </a>
+            </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="second-page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Solicita tu Cotización Preferida Aquí</h4>
+          <h2>Haz tu Pedido Personalizado</h2>
+          <p>Cuéntanos sobre tu proyecto, las cantidades que necesitas y el tipo de producto que buscas. Te enviaremos una cotización detallada lo antes posible.</p>
+          <div class="main-button"><a href="about.html">Descubre Más</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-info reservation-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-phone"></i>
+            <h4>Llámanos</h4>
+            <a href="#">+123 456 789 (0)</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-envelope"></i>
+            <h4>Envíanos un Email</h4>
+            <a href="#">contacto@creapaq.com</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="info-item">
+            <i class="fa fa-map-marker"></i>
+            <h4>Visita Nuestras Oficinas</h4>
+            <a href="#">Av. Principal 123, Ciudad Creativa, C.A.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reservation-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" width="100%" height="450px" frameborder="0" style="border:0; border-top-left-radius: 23px; border-top-right-radius: 23px;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <form id="reservation-form" name="gs" method="submit" role="search" action="#">
+            <div class="row">
+              <div class="col-lg-12">
+                <h4>Solicita tu <em>Cotización</em> a través de este <em>Formulario</em></h4>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="Name" class="form-label">Tu Nombre</label>
+                  <input type="text" name="Name" class="Name" placeholder="Ej. Juan Pérez" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="Number" class="form-label">Tu Número de Teléfono</label>
+                  <input type="text" name="Number" class="Number" placeholder="Ej. +xxx xxx xxx" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="chooseGuests" class="form-label">Cantidad de Unidades</label>
+                  <select name="Guests" class="form-select" aria-label="Default select example" id="chooseGuests" onChange="this.form.click()">
+                    <option selected>Ej. 200 o 500 o 1000</option>
+                    <option type="checkbox" name="option1" value="20-50">20-50</option>
+                    <option value="50-100">50-100</option>
+                    <option value="100-500">100-500</option>
+                    <option value="500+">500+</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="Number" class="form-label">Fecha del Pedido (opcional)</label>
+                  <input type="date" name="date" class="date" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="chooseDestination" class="form-label">Elige el Tipo de Producto</label>
+                  <select name="Destination" class="form-select" aria-label="Default select example" id="chooseCategory" onChange="this.form.click()">
+                    <option selected>Ej. Caja de Cartón, Bolsa de Papel, etc.</option>
+                    <option value="Caja de Cartón">Caja de Cartón</option>
+                    <option value="Bolsa de Papel">Bolsa de Papel</option>
+                    <option value="Bolsa de Tela">Bolsa de Tela</option>
+                    <option value="Caja Rígida">Caja Rígida</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button class="main-button">Solicitar Cotización Ahora</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2036 <a href="#">CreaPaq</a> Company. Todos los derechos reservados.
+            <br>Diseño: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(".option").click(function() {
+      $(".option").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script>
+
+</body>
+
+</html>
